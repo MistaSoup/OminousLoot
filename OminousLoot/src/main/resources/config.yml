@@ -1,0 +1,146 @@
+# OminousLoot Configuration File
+# Enhances loot drops from ominous trial vaults
+
+# Global plugin enable/disable
+enabled: true
+
+# Time range (in seconds) for when extra loot can spawn after vault opens
+# Random time will be picked between min and max
+spawn-delay:
+  min: 1.0
+  max: 5.0
+
+# Height offset (in blocks) above the vault where items will spawn
+# Higher values prevent items from being pushed by the vault block
+# Can use decimals (e.g., 1.5, 2.0, 2.5)
+spawn-height-offset: 1.4
+
+# Loot items configuration
+# Each item can be toggled on/off, has a probability to spawn, and a min/max amount
+# Probability is checked AFTER the item is randomly selected from enabled items
+# Format:
+#   enabled: true/false - Whether this item can be selected
+#   probability: 0-100 - Chance this item spawns after being selected (percentage)
+#   min-amount: minimum stack size
+#   max-amount: maximum stack size
+
+loot-items:
+  
+  # Wind Burst enchanted books (randomly picks level 1, 2, or 3)
+  wind_burst_book:
+    enabled: true
+    probability: 50.0
+    min-amount: 1
+    max-amount: 1
+  
+  # Ominous Bottle
+  ominous_bottle:
+    enabled: true
+    probability: 45.0
+    min-amount: 1
+    max-amount: 3
+  
+  # Emeralds
+  emerald:
+    enabled: true
+    probability: 60.0
+    min-amount: 2
+    max-amount: 8
+  
+  # Diamond Block
+  diamond_block:
+    enabled: true
+    probability: 30.0
+    min-amount: 1
+    max-amount: 2
+  
+  # Enchanted Golden Apple
+  enchanted_golden_apple:
+    enabled: true
+    probability: 40.0
+    min-amount: 1
+    max-amount: 2
+  
+  # Heavy Core
+  heavy_core:
+    enabled: true
+    probability: 25.0
+    min-amount: 1
+    max-amount: 1
+  
+  # Flow Armor Trim Smithing Template
+  flow_armor_trim_smithing_template:
+    enabled: true
+    probability: 35.0
+    min-amount: 1
+    max-amount: 1
+  
+  # Bolt Armor Trim Smithing Template
+  bolt_armor_trim_smithing_template:
+    enabled: true
+    probability: 35.0
+    min-amount: 1
+    max-amount: 1
+  
+  # Golden Apple
+  golden_apple:
+    enabled: true
+    probability: 50.0
+    min-amount: 1
+    max-amount: 4
+  
+  # Damaged Diamond Chestplate
+  damaged_diamond_chestplate:
+    enabled: false
+    probability: 40.0
+    min-amount: 1
+    max-amount: 1
+  
+  # Damaged Diamond Axe
+  damaged_diamond_axe:
+    enabled: false
+    probability: 40.0
+    min-amount: 1
+    max-amount: 1
+  
+  # Experience Bottle
+  experience_bottle:
+    enabled: true
+    probability: 55.0
+    min-amount: 3
+    max-amount: 10
+  
+  # Baked Potato
+  baked_potato:
+    enabled: false
+    probability: 70.0
+    min-amount: 6
+    max-amount: 12
+  
+  # Cooked Chicken
+  cooked_chicken:
+    enabled: false
+    probability: 70.0
+    min-amount: 6
+    max-amount: 12
+  
+  # Iron Ingot
+  iron_ingot:
+    enabled: true
+    probability: 65.0
+    min-amount: 4
+    max-amount: 12
+  
+  # Honey Bottle
+  honey_bottle:
+    enabled: false
+    probability: 60.0
+    min-amount: 2
+    max-amount: 4
+  
+  # Diamond
+  diamond:
+    enabled: true
+    probability: 50.0
+    min-amount: 2
+    max-amount: 6

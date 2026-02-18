@@ -1,0 +1,22 @@
+name: OminousLoot
+version: ${project.version}
+main: com.ominousloot.OminousLoot
+api-version: '1.21'
+folia-supported: true
+author: MistaSoup
+description: Enhances ominous trial vault loot drops
+
+commands:
+  ominousloot:
+    description: Main command for OminousLoot
+    usage: /ominousloot reload
+    aliases: [ol, oloot]
+    permission: ominousloot.reload
+
+permissions:
+  ominousloot.use:
+    description: Allows the plugin to work for this player
+    default: true
+  ominousloot.reload:
+    description: Allows reloading the plugin configuration
+    default: op
